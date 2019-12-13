@@ -1,0 +1,22 @@
+
+.flex{
+    display: flex;
+}
+.textRight{
+    text-align: right;
+}
+.line{
+    line-height: 32px;
+}
+.overflow{
+    overflow: auto;
+    &::-webkit-scrollbar{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+each(range(12), {
+    .flex@{value} {
+        flex: @value;
+    }
+});
